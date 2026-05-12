@@ -4,6 +4,7 @@
     --color3:#9692C1;
     --color4:#B9B2E8;
     --color5:#D9D9D9;
+    --color6:#898CAB;
     --font-text:Arial, Helvetica, sans-serif;
     --font-family: 'Rambla', sans-serif;
 }
@@ -23,6 +24,20 @@
 
 h1{
     font-family: 'Mikalea', serif;
+    color: var(--color6);
+    font-size:78.75px;
+    font-weight: 400;
+    width: 368px;
+    height: 76px;
+    position: absolute;
+    left: 63px;
+    top: 37px;
+}
+
+span{
+    font-family: 'Mikalea', serif;
+    color: var(--color4);
+    font-size:78.75px;
 }
 
 h2{
