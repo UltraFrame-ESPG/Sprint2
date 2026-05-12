@@ -11,10 +11,59 @@
 
     <h1>UltraFrame</h1>
 
-    <header>
-        <div id="card-lateral">
-            
-        </div>
-    </header>
+    <main>
+        <section class="cards">
+
+            <div id="card_lateral">
+                <img src="./src/assets/casa.png" alt="Ícone Casa" id="icone_casa">
+                <img src="./src/assets/saida.png" alt="Deslogar" id="icone_saida">
+            </div>
+
+            <section id="cards_esquerda">
+
+                <div id="card_estudantes" >
+                    <h3>Total de acessos ao modo estudante</h3>
+                    <h2>1.302.300</h2>
+                    <h4>Esse mês</h4>
+                </div>
+
+                <div id="card_normal">
+                    <h3>Total de acessos ao modo normal</h3>
+                    <h2>3.426.034</h2>
+                    <h4>Esse mês</h4>
+                </div>
+
+                <div id="grafico_linha">
+                    <h3>Grafico de crescimento do acesso ao longo do tempo</h3>
+                    <canvas id="grafico"></canvas>
+                </div>
+
+            </section>
+
+            <section id="cards_direita">
+
+                <div id="grafico_pizza">
+                    <h3>Precisão da detecção de texto</h3>
+                    <img src="./src/assets/grafico_pizza.png" alt="Grafico">
+                </div>
+
+                <div>
+                    <h3>Total Usuarios</h3>
+                    <h2>300.00</h2>
+                    <h4>Esse ano</h4>
+                </div>
+
+                <div id="login">
+                    <img src="./src/assets/login.png" alt="Login">
+                </div>
+
+            </section>
+
+        </section>
+        
+    </main>
+
+     <!-- JS EXTERNO -->
+     <script src="./src/js/script.js"></script>
 </body>
 </html>
