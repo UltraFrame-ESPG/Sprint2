@@ -1,237 +1,106 @@
-:root{
-    --color1:#0A1123;
-    --color2:#8387C4;
-    --color3:#9692C1;
-    --color4:#B9B2E8;
-    --color5:#D9D9D9;
-    --color6:#898CAB;
-
-    --font-family:'Rambla', sans-serif;
+/* fonte */
+@font-face {
+    font-family: "Mikalea";
+    src: url("../fonts/Mikalea.ttf");
 }
 
-@font-face {
-    font-family:'Mikalea';
-    src:url('../fonts/Mikalea.ttf') format('truetype');
+
+/* cores */
+:root{
+    --color1:#020826;
+    --color2:#8b8bc7;
+    --color3:#b3b3e6;
+    --color4:#d9d9d9;
+    --color5:#ffffff;
+    --color6:#8d8db8;
+    --font-family: 'Rambla', sans-serif;
 }
 
 *{
     margin:0;
-    padding:0;
-    box-sizing:border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* fundo */
 body{
-    background-color:var(--color1);
-    padding:40px 50px;
-    min-height:100vh;
+    background-color: var(--color1);
+    height: 900px;
+    font-family: "Rambla";
+
 }
 
-/* TITULO */
-
-h1{
-    font-family:'Mikalea', serif;
-    font-size:78px;
-    font-weight:400;
-
-    color:var(--color6);
-
-    margin-bottom:50px;
+/* container */
+.container{
+    width: 100%;
+    height: 900px;
 }
 
-span{
-    color:var(--color4);
+/* logo */
+.logo{
+    text-align: center;
+    color: var(--color3);
+    font-size: 70px;
+    margin-top: 20px;
+    font-family: "Mikalea";
 }
 
-/* TEXTOS */
-
-h2{
-    font-family:var(--font-family);
-    font-size:clamp(40px, 5vw, 76px);
-    font-weight:700;
+.ultra{
+    color: var(--color6);
 }
 
-h3{
-    font-family:var(--font-family);
-    font-size:clamp(18px, 2vw, 30px);
-    font-weight:400;
+/* caixa de login */
+.login-box{
+    width: 100%;
+    height: 800px;
+    background-color: var(--color2);
+    margin: 40px auto;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
 }
 
-h4{
-    font-family:var(--font-family);
-    font-size:clamp(14px, 1.5vw, 23px);
-    font-weight:400;
+/* título login */
+.login-box h2{
+    color: var(--color5);
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-family: "Mikalea";
 }
 
-/* AREA GERAL */
-
-.cards{
-    display:flex;
-    gap:35px;
-    align-items:stretch; /* faz tudo acompanhar altura */
+.login-box label{
+    width: 40%;
+    color: var(--color5);
+    margin-bottom: 5px;
+    font-family: "Rambla";
+    font-size: 40.37;
 }
 
-/* MENU LATERAL */
+/* inputs */
+.login-box input{
+    width: 40%;
+    padding: 10px;
+    border:none;
+    border-radius: 8px;
+    background-color: var(--color4);
+    margin-bottom: 25px;
+    font-family: "Rambla";
+    font-size: 40.37;
 
-#card_lateral{
-    width:100px;
-
-    background-color:var(--color2);
-
-    border-radius:35px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:30px 0;
-
-    align-self:stretch; /* acompanha toda altura */
 }
 
-/* COLUNAS */
+/* botão */
+.login-box button{
+    padding: 10px 35px;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--color1);
+    color: var(--color5);
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Rambla";
+    font-size: 40.37;
 
-#cards_esquerda,
-#cards_direita{
-    flex:1;
-
-    display:flex;
-    flex-direction:column;
-
-    gap:30px;
-}
-
-/* LOGIN */
-
-#login{
-    display:flex;
-
-    justify-content:flex-end; /* joga pra direita */
-    align-items:flex-start;   /* joga pra cima */
-
-    width:100%;
-}
-
-#login img{
-    width:100%;
-    max-width:350px;
-}
-/* MENU LATERAL */
-
-#card_lateral{
-    width:100px;
-    min-height:80vh;
-
-    background-color:var(--color2);
-
-    border-radius:35px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:30px 0;
-}
-
-/* ICONES */
-
-#icone_casa,
-#icone_saida{
-    width:45px;
-}
-
-/* COLUNAS */
-
-#cards_esquerda,
-#cards_direita{
-    flex:1;
-
-    display:flex;
-    flex-direction:column;
-
-    gap:30px;
-}
-
-/* CARDS */
-
-.card{
-    background-color:var(--color3);
-
-    border-radius:40px;
-
-    padding:25px;
-
-    width:100%;
-}
-
-/* CARDS DE TEXTO */
-
-#card_estudantes,
-#card_normal,
-#usuarios{
-    min-height:220px;
-
-    display:flex;
-    flex-direction:column;
-}
-
-/* H2 NO MEIO */
-
-#card_estudantes h2,
-#card_normal h2,
-#usuarios h2{
-    margin:auto 0;
-}
-
-/* GRAFICO LINHA */
-
-#grafico_linha{
-    min-height:350px;
-
-    display:flex;
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
-}
-
-#grafico{
-    width:90% !important;
-    height:240px !important;
-}
-
-/* GRAFICO PIZZA */
-
-#grafico_pizza{
-    min-height:350px;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    gap:20px;
-}
-
-#grafico_pizza img{
-    width:70%;
-    max-width:250px;
-}
-
-/* LOGIN */
-
-#login{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-#login img{
-    width:100%;
-    max-width:350px;
 }

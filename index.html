@@ -6,92 +6,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- Link CSS Externo -->
-     <link rel="stylesheet" href="src/css/estilo.css">
-    <title>Home</title>
+
+    <!-- CSS EXTERNO -->
+     <link rel="stylesheet" href="../css/login.css">
+
+    <title>UltraFrame</title>
 </head>
 <body>
+    <div class="container">
+        <!-- LOGO -->
+         <h1 class="logo">
+            <span class="ultra">Ultra</span>Frame 
+         </h1>
 
-    <h1><span>Ultra</span>Frame</h1>
+         <!-- CAIXA DE LOGIN -->
+          <div class="login-box">
+            <h2>Login</h2>
 
-    <main>
+             <!-- EMAIL -->
+            <label>Email</label>
 
-    <section class="cards">
+            <input 
+                type="email"
+                placeholder="Insira o seu email"
+            >
 
-        <!-- MENU LATERAL -->
-        <div id="card_lateral">
-            <img src="./src/assets/casa.png" alt="Ícone Casa" id="icone_casa">
+            <!-- SENHA -->
+             <label>Senha</label>
 
-            <img src="./src/assets/saida.png" alt="Deslogar" id="icone_saida">
-        </div>
+            <input 
+                type="password"
+                placeholder="Insira a sua senha"
+            >
 
-        <!-- CARDS ESQUERDA -->
-        <section id="cards_esquerda">
+            <!-- BOTÃO -->
+             <button>
+                Entrar
+             </button>
 
-            <div class="card" id="card_estudantes">
+          </div>
 
-                <h3>Total de acessos ao modo estudante</h3>
+    </div>
 
-                <h2>1.302.300</h2>
-
-                <h4>Esse mês</h4>
-
-            </div>
-
-            <div class="card" id="card_normal">
-
-                <h3>Total de acessos ao modo normal</h3>
-
-                <h2>3.426.034</h2>
-
-                <h4>Esse mês</h4>
-
-            </div>
-
-            <div class="card" id="grafico_linha">
-
-                <h3>Gráfico de crescimento do acesso ao longo do tempo</h3>
-
-                <canvas id="grafico"></canvas>
-
-            </div>
-
-        </section>
-
-        <!-- CARDS DIREITA -->
-        <section id="cards_direita">
-
-            <div class="card" id="grafico_pizza">
-
-                <h3>Precisão da detecção de texto</h3>
-
-                <img src="./src/assets/grafico_pizza.png" alt="Gráfico Pizza">
-
-            </div>
-
-            <div class="card" id="usuarios">
-
-                <h3>Total Usuários</h3>
-
-                <h2>300.000</h2>
-
-                <h4>Esse ano</h4>
-
-            </div>
-
-            <div id="login">
-
-                <img src="./src/assets/login.png" alt="Login">
-
-            </div>
-
-        </section>
-
-    </section>
-
-</main>
-
-     <!-- JS EXTERNO -->
+    <!-- JS EXTERNO -->
      <script src="./src/js/script.js"></script>
+     
 </body>
 </html>
