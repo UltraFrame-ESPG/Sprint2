@@ -202,22 +202,35 @@ h4{
    GRAFICO LINHA
 ========================= */
 
-#grafico_linha{
-    min-height:260px;
+/* =========================
+    GRAFICO LINHA
+========================= */
 
-    display:flex;
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
+#grafico_linha {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    /* Removi os paddings excessivos para o gráfico encostar mais nas bordas se necessário */
+    padding: 25px 20px 20px 20px; 
 }
 
-#grafico{
-    width:90% !important;
-    height:240px !important;
+#grafico_linha h3 {
+    text-align: left; /* No design original o texto parece alinhado à esquerda/centro, ajuste conforme o gosto */
+    margin-bottom: 20px;
 }
 
+#grafico {
+    /* Em vez de width fixo de 420px, usamos 100% para ser responsivo ao card */
+    width: 100% !important; 
+    height: auto !important; /* Deixa a altura proporcional */
+    max-height: 150px; /* Limita a altura para não empurrar o card pra baixo */
+    
+    display: block;
+    margin: 0 auto;
+    
+    /* Isso garante que a imagem não distorça */
+    object-fit: contain; 
+}
 /* =========================
    GRAFICO PIZZA
 ========================= */
