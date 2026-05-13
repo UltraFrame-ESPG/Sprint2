@@ -5,14 +5,13 @@
     --color4:#B9B2E8;
     --color5:#D9D9D9;
     --color6:#898CAB;
-    --font-text:Arial, Helvetica, sans-serif;
-    --font-family: 'Rambla', sans-serif;
+
+    --font-family:'Rambla', sans-serif;
 }
+
 @font-face {
-    font-family: 'Mikalea';
-    src: url('../fonts/Mikalea.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family:'Mikalea';
+    src:url('../fonts/Mikalea.ttf') format('truetype');
 }
 
 *{
@@ -21,44 +20,218 @@
     box-sizing:border-box;
 }
 
+body{
+    background-color:var(--color1);
+    padding:40px 50px;
+    min-height:100vh;
+}
+
+/* TITULO */
 
 h1{
-    font-family: 'Mikalea', serif;
-    color: var(--color6);
-    font-size:78.75px;
-    font-weight: 400;
-    width: 368px;
-    height: 76px;
-    position: absolute;
-    left: 63px;
-    top: 37px;
+    font-family:'Mikalea', serif;
+    font-size:78px;
+    font-weight:400;
+
+    color:var(--color6);
+
+    margin-bottom:50px;
 }
 
 span{
-    font-family: 'Mikalea', serif;
-    color: var(--color4);
-    font-size:78.75px;
+    color:var(--color4);
 }
 
+/* TEXTOS */
+
 h2{
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 76.3px;
+    font-family:var(--font-family);
+    font-size:clamp(40px, 5vw, 76px);
+    font-weight:700;
 }
 
 h3{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 30.7px;
+    font-family:var(--font-family);
+    font-size:clamp(18px, 2vw, 30px);
+    font-weight:400;
 }
 
 h4{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 23.71px;
+    font-family:var(--font-family);
+    font-size:clamp(14px, 1.5vw, 23px);
+    font-weight:400;
 }
 
+/* AREA GERAL */
 
-body{
-    background-color: var(--color1);
+.cards{
+    display:flex;
+    gap:35px;
+    align-items:stretch; /* faz tudo acompanhar altura */
+}
+
+/* MENU LATERAL */
+
+#card_lateral{
+    width:100px;
+
+    background-color:var(--color2);
+
+    border-radius:35px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 0;
+
+    align-self:stretch; /* acompanha toda altura */
+}
+
+/* COLUNAS */
+
+#cards_esquerda,
+#cards_direita{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* LOGIN */
+
+#login{
+    display:flex;
+
+    justify-content:flex-end; /* joga pra direita */
+    align-items:flex-start;   /* joga pra cima */
+
+    width:100%;
+}
+
+#login img{
+    width:100%;
+    max-width:350px;
+}
+/* MENU LATERAL */
+
+#card_lateral{
+    width:100px;
+    min-height:80vh;
+
+    background-color:var(--color2);
+
+    border-radius:35px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 0;
+}
+
+/* ICONES */
+
+#icone_casa,
+#icone_saida{
+    width:45px;
+}
+
+/* COLUNAS */
+
+#cards_esquerda,
+#cards_direita{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* CARDS */
+
+.card{
+    background-color:var(--color3);
+
+    border-radius:40px;
+
+    padding:25px;
+
+    width:100%;
+}
+
+/* CARDS DE TEXTO */
+
+#card_estudantes,
+#card_normal,
+#usuarios{
+    min-height:220px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* H2 NO MEIO */
+
+#card_estudantes h2,
+#card_normal h2,
+#usuarios h2{
+    margin:auto 0;
+}
+
+/* GRAFICO LINHA */
+
+#grafico_linha{
+    min-height:350px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+#grafico{
+    width:90% !important;
+    height:240px !important;
+}
+
+/* GRAFICO PIZZA */
+
+#grafico_pizza{
+    min-height:350px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+}
+
+#grafico_pizza img{
+    width:70%;
+    max-width:250px;
+}
+
+/* LOGIN */
+
+#login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#login img{
+    width:100%;
+    max-width:350px;
 }
