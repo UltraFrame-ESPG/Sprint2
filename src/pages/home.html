@@ -1,103 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- Link CSS Externo -->
-     <link rel="stylesheet" href="../css/home.css">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>UltraFrame - Dashboard</title>
 </head>
 <body>
 
+    <!-- TITULO -->
     <div id="topo">
-
         <h1><span>Ultra</span>Frame</h1>
-
         <div id="login">
             <img src="../assets/login.png" alt="Login">
         </div>
-
     </div>
 
     <main>
 
-    <section class="cards">
+        <!-- CARDS GERAIS -->
+        <section class="cards">
 
-        <!-- MENU LATERAL -->
-        <div id="card_lateral">
-            <img src="../assets/casa.png" alt="Ícone Casa" id="icone_casa">
+            <!-- CARD LATERAL -->
+            <nav id="card_lateral">
+                <div id="container_casa">
+                    <img src="../assets/casa.png" alt="Ícone Casa" id="icone_casa">
+                </div>
+                <a href="../../index.html">
+                    <img src="../assets/saida.png" alt="Deslogar" id="icone_saida">
+                </a>
+            </nav>
 
-            <a href="../../index.html">
-               <img src="../assets/saida.png" alt="Deslogar" id="icone_saida">
-            </a>
-        </div>
+            <!-- CARDS ESQUERDAS -->
+            <section id="cards_esquerda">
 
-        <!-- CARDS ESQUERDA -->
-        <section id="cards_esquerda">
+                <!-- CARD ESTUDANTES -->
+                <div class="card card-esq" id="card_estudantes">
+                    <h3>Total de acessos ao modo estudante</h3>
+                    <h2>1.302.300</h2>
+                    <h4>Esse mês</h4>
+                </div>
 
-            <div class="card" id="card_estudantes">
+                <!-- CARD NORMAL -->
+                <div class="card card-esq" id="card_normal">
+                    <h3>Total de acessos ao modo normal</h3>
+                    <h2>3.426.034</h2>
+                    <h4>Esse mês</h4>
+                </div>
 
-                <h3>Total de acessos ao modo estudante</h3>
+                <!-- GRAFICO LINHA -->
+                <div class="card card-esq" id="grafico_linha">
+                    <h3>Gráfico de crescimento do acesso ao longo do tempo</h3>
+                    <img src="../assets/grafico_linha.png" alt="Gráfico Linha" id="imagem_grafico">
+                </div>
+            </section>
 
-                <h2>1.302.300</h2>
+            <!-- CARDS DIREITA -->
+            <section id="cards_direita">
 
-                <h4>Esse mês</h4>
+                <!-- GRAFICO PIZZA -->
+                <div class="card card-dir" id="grafico_pizza">
+                    <h3>Precisão da detecção de texto</h3>
+                    <img src="../assets/grafico_pizza.png" alt="Gráfico Pizza" id="pizza_img">
+                </div>
 
-            </div>
-
-            <div class="card" id="card_normal">
-
-                <h3>Total de acessos ao modo normal</h3>
-
-                <h2>3.426.034</h2>
-
-                <h4>Esse mês</h4>
-
-            </div>
-
-            <div class="card" id="grafico_linha">
-
-                <h3>Gráfico de crescimento do acesso ao longo do tempo</h3>
-
-                <img src="../assets/grafico_linha.png" alt="Gráfico Linha" id="grafico">
-
-            </div>
-
-        </section>
-
-        <!-- CARDS DIREITA -->
-        <section id="cards_direita">
-
-            <div class="card" id="grafico_pizza">
-
-                <h3>Precisão da detecção de texto</h3>
-
-                <img src="../assets/grafico_pizza.png" alt="Gráfico Pizza">
-
-            </div>
-
-            <div class="card" id="usuarios">
-
-                <h3>Total Usuários</h3>
-
-                <h2>300.000</h2>
-
-                <h4>Esse ano</h4>
-
-            </div>
-
-            
+                <!-- CARD USUARIOS -->
+                <div class="card card-dir" id="usuarios">
+                    <h3>total de usuarios</h3>
+                    <h2>300.000</h2>
+                    <h4>Esse ano</h4>
+                </div>
+            </section>
 
         </section>
+    </main>
 
-    </section>
-
-</main>
-
-     <!-- JS EXTERNO -->
-     <script src="../js/script.js"></script>
 </body>
 </html>
