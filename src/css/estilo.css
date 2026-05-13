@@ -117,3 +117,11 @@ body{
     transition: 0.5s;
     font-size: 20px;
 }
+.btn-esqueci-senha{
+    width: 40%;
+    color: var(--color5);
+    margin-bottom: 5px;
+    font-family: "Rambla";
+    font-size: 40.37;
+    text-decoration: none;
+}

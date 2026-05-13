@@ -30,3 +30,19 @@ function mostrarMensagem(texto){
     }, 3000);
 
 }
+
+const esqueciSenha = document.getElementById('esqueci-senha');
+
+esqueciSenha.addEventListener('click', (e) => {
+    e.preventDefault(); 
+
+    const emailAdmin = prompt("Digite seu e-mail de administrador para recuperar a senha:");
+    
+    if (emailAdmin) {   
+        if (emailAdmin == "admin@gmail.com") {
+            alert("Sucesso! As instruções de recuperação foram enviadas para " + emailAdmin);
+        } else {
+            alert("Erro: Digite um e-mail válido.");
+        }
+    }
+});
