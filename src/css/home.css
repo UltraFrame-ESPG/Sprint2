@@ -22,6 +22,69 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* HERO */
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    z-index: 9999; 
+    overflow: hidden;
+    background: var(--color1);
+    transition: opacity 1s ease, visibility 1s; 
+}
+
+
+.hero-sumir {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.slide.ativo { 
+    opacity: 1; 
+}
+
+.slide img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+ }
+
+.texto {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 30px; border-radius: 20px;
+}
+
+.texto p{
+    font-size: 30px;
+}
+
+#conteudo-principal {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.mostrar-site #conteudo-principal {
+    opacity: 1;
+}
+/*  */
 
 body {
     background-color: var(--color1);
@@ -172,6 +235,9 @@ h4 { font-size: 16px; font-weight: 400; color: var(--color1); }
     display: block;
     margin: 0 auto;
     object-fit: contain; 
+}
+#imagem_grafico{
+    padding-top: 40px;
 }
 
 /* GRAFICO PIZZA*/
