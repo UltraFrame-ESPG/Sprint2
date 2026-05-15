@@ -10,7 +10,7 @@ Sistema desenvolvido para gerenciamento de acessos e aproveitamento do Modo Estu
 |------|----|
 | Eduarda Soares Moraes | RM569369 |
 | Isabella Yogui Kohara | RM569777 |
-| Julia Santiago Mateini | RM561315 |
+| Júlia Santiago Mateini | RM561315 |
 | Marcella Pinheiro Silva | RM569457 |
 | Mariana Malaguttu Gomes Peixoto | RM570290 |
 
